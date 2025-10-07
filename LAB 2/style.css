@@ -1,0 +1,204 @@
+/* ======================================
+   Navya Kumar Portfolio - style.css
+   Date: 6 October 2025
+   Description: External CSS for one-page portfolio
+   ====================================== */
+
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f2f8; /* soft lavender background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #6a4c93; /* muted purple */
+}
+
+a {
+    color: #6a4c93;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Skip Link ===== */
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    background: #6a4c93;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* ===== Header / Navigation ===== */
+header {
+    background-color: #e6e0f8; /* soft lavender shade */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d3c3f3;
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ===== About Section ===== */
+#about img.img1 {
+    display: block;
+    margin: 20px auto 0 auto;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Projects Section ===== */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#projects li article h3 {
+    margin-top: 0;
+}
+
+/* ===== Skills Section ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #dcd0f5;
+}
+
+/* ===== Contact Section ===== */
+form div {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #6a4c93;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5a3b7a;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6e0f8;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer a:hover {
+    color: #5a3b7a;
+}
